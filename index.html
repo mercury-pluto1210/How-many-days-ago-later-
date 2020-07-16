@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How many days ago? later?</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700">
+</head>
+
+<body>
+  <div class="main">
+    <div class="calendar-contain">
+      <div id="today"></div>
+      <div id="calendar"></div>
+      <div class="prev-and-next-button">
+        <button id="prev" class="button" type="button">&lt;</button>
+        <button id="next" class="button" type="button">&gt;</button>
+      </div>
+    </div>
+
+    <div class="inline-radio">
+      <form action="post" id="target" class="radio-form">
+        <div class="radio-div">
+          <input type="radio" name="term" class="radio-button" value="before" onclick="before()">
+          <label class="radio-label">Before Day</label>
+        </div>
+        <div class="radio-div">
+          <input type="radio" name="term" class="radio-button" value="after" onclick="after()">
+          <label class="radio-label">After Day</label>
+        </div>
+      </form>
+    </div>
+
+    <div class="answer-day">
+      <input type="date" id="setDate" class="answer-input-field">
+      <div class="answer-block">
+        <p class="answer-text-date" id="answerNum"></p>
+        <p class="answer-text" id="answer"></p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="JS.js"></script>
+</html>
