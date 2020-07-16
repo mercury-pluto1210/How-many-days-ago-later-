@@ -117,7 +117,7 @@ const answerForDate = document.getElementById("answerNum")
 
 function before(){
   // Before Dayを選択した場合の処理
-  answerText.innerHTML = "days bofore."
+  answerText.innerHTML = "days before."
 
   document.getElementById("setDate").onchange = function() {
     // inputで日付を選択するとその日が今日から何日前かを表示する
